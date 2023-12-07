@@ -1,0 +1,17 @@
+<div class="card m-3" style="width: 18rem" *ngFor="let r of listProdcut; let i = index">
+    <div *ngIf="r.id==id">
+        <div class="card-body">
+            <h5 class="card-title">{{ r.id }}</h5>
+            <p class="card-text">
+                {{ r.title }}
+            </p>
+
+            <h5 class="card-title">Num Appart</h5>
+            <p class="card-text">
+                {{ r.price }}
+            </p>
+            <p> {{r.quantity}}</p>
+            <p> {{r.like}}</p>
+            </div>
+    </div>
+</div>
